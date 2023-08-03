@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Game.Adapter
 {
-    internal class MernisReferenceAdapter : IGamerCheckService
+    internal class MernisReferenceAdapter 
     {
         public bool CheckIfRealPerson(Gamer gamer)
         {

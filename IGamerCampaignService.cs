@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Game
 {
-    public interface IGamerCheckService
+    internal interface IGamerCampaignService
     {
-        bool CheckIfRealPerson(Gamer gamer);
+        void Add();
+        void Update();
+        void Delete();
     }
 }
