@@ -12,9 +12,18 @@ namespace Game
             gamer.GamerSurname = "Gülçiçek";
             gamer.DateOfBirth = new DateTime(1999, 3, 22);
 
+            Campaigns campaigns = new Campaigns();
+            campaigns.CampaignId = 1;
+            campaigns.CampaignName = "Sepette %30 indirim";
+
             GamerManager gamerManager = new GamerManager();
             gamerManager.Add(gamer);
 
+            SaleManager saleManager = new SaleManager();
+            saleManager.Sale(gamer, campaigns);
+
+            CampaignsManager campaignsManager = new CampaignsManager();
+            campaignsManager.Add();
 
         }
     }

@@ -13,11 +13,6 @@ namespace Game
             Console.WriteLine("Campaign's Information has been added.");
         }
 
-        public bool CheckIfRealPerson(Gamer gamer)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Delete()
         {
             Console.WriteLine("Campaign's Information has been deleted.");

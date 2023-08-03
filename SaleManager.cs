@@ -10,7 +10,7 @@ namespace Game
     {
         public void Sale(Gamer gamer, Campaigns campaign)
         {
-            Console.WriteLine(gamer.GamerName + "is has " + campaign.CampaignName + " campanign");
+            Console.WriteLine(gamer.GamerName + " has " + campaign.CampaignName + " campaign");
         }
     }
 }
