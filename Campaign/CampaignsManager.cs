@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Game
 {
-    internal class CampaignsManager : IGamerCampaignService
+    internal class CampaignsManager : ICampaignService
     {
         public void Add()
         {

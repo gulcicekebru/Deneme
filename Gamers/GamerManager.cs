@@ -7,12 +7,18 @@ using System.Threading.Tasks;
 
 namespace Game
 {
-    internal class GamerManager:MernisReferenceAdapter
+    public class GamerManager: IGamerService
     {
-        
-        public virtual void Add(Gamer gamer)
+        MernisReferenceAdapter _mernisReferenceAdapter;
+
+        public GamerManager(MernisReferenceAdapter mernisReferenceAdapter)
         {
-            if(CheckIfRealPerson(gamer))
+            _mernisReferenceAdapter = mernisReferenceAdapter;
+        }
+
+        public void Add(Gamer gamer)
+        {
+            if(_mernisReferenceAdapter.CheckIfRealPerson(gamer))
             {
                 Console.WriteLine("Gamer is valid");
             }

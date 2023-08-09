@@ -16,7 +16,9 @@ namespace Game
             campaigns.CampaignId = 1;
             campaigns.CampaignName = "Sepette %30 indirim";
 
-            GamerManager gamerManager = new GamerManager();
+           
+
+            GamerManager gamerManager = new GamerManager(new Adapter.MernisReferenceAdapter());
             gamerManager.Add(gamer);
 
             SaleManager saleManager = new SaleManager();

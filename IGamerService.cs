@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Game
 {
-    internal interface IGamerCampaignService
+    internal interface IGamerService
     {
-        void Add();
+        void Add(Gamer gamer);
+
         void Update();
         void Delete();
     }
